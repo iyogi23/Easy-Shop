@@ -83,7 +83,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
 
         if(ImageUri==null)
         {
-            Toast.makeText(this, "Please Select a Picture", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Select a Product Picture", Toast.LENGTH_SHORT).show();
         }
         if(TextUtils.isEmpty(Description))
         {
