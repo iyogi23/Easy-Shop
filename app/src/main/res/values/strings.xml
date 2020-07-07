@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EasyShop</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="price">Price</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_name">Product Name</string>
+    <string name="total_price">Total Price =</string>
+    <string name="proceed_to_buy">Proceed to Buy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

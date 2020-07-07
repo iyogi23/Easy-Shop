@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    tools:context="com.example.easyshop.SettingActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cardview_dark_background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light">
+
+                <TextView
+                    android:id="@+id/close_settings_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Close"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/update_account_settings_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="Update"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profileImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/Change_profile_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_profileImage"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="120dp"
+        android:text="Change Profile"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/settings_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Change_profile_image_btn"
+        android:hint="Phone Number"
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/settings_fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_phoneNumber"
+        android:hint="Full Name"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/settings_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_fullName"
+        android:hint="Full Address"
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

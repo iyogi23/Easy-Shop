@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.easyshop.DeveloperActivity">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/developer_profileImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_developer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/developer_profileImage">
+
+        <TextView
+            android:id="@+id/developer_contact"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/developerBtn"
+            android:background="@android:color/holo_blue_bright"
+            android:padding="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="Yogeshkjha23@gmail.com"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/developerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="9dp"
+            android:text="Contact: "
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Give your feedback/suggestions"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/rel_developer"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"/>
+
+
+    <EditText
+        android:id="@+id/developer_messageBox"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/title_developer"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:autoLink="all"
+        android:hint="Give your feedback/suggestions "
+        android:lines="5"
+        android:minLines="1"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:scrollbars="none"
+        android:inputType="textMultiLine|textCapSentences"/>
+
+
+
+    <Button
+        android:id="@+id/developer_submit_feedback_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/developer_messageBox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/holo_orange_dark"
+        android:padding="17dp"
+        android:text="Submit Feedback"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+
+        />
+
+
+
+</RelativeLayout>

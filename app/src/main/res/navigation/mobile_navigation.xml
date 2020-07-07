@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/categories">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.easyshop.BlankFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_blank">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.example.easyshop.categories"
+        android:label="Products"
+        tools:layout="@layout/fragment_categories" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.example.easyshop.cart"
+        android:label="Products"
+        tools:layout="@layout/fragment_cart" >
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.easyshop.setting"
+        android:label="Products"
+        tools:layout="@layout/fragment_setting" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.easyshop.order"
+        android:label="Products"
+        tools:layout="@layout/fragment_order" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.example.easyshop.order"
+        android:label="Products"
+        tools:layout="@layout/fragment_order" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/developer"
+        android:name="com.example.easyshop.Developer"
+        android:label="Products"
+        tools:layout="@layout/fragment_developer" />
+</navigation>

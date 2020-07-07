@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.easyshop.AdminNewOrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/relcart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/cart_totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Orders"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orders_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relcart"
+        android:background="#F1E5E5">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
